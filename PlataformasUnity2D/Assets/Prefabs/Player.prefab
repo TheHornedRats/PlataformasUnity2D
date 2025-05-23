@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -8677000545617972343}
   - component: {fileID: -3139080969402934733}
   - component: {fileID: 7987997101773201393}
+  - component: {fileID: 3686918654100856248}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -74,7 +75,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1462323315741496666}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 2051754ab17056c4e921dab5044b74a7, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -126,7 +127,7 @@ MonoBehaviour:
   jumpForce: 4
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 72
   groundCheck: {fileID: 0}
   groundCheckRadius: 0.1
 --- !u!212 &-139579774879441696
@@ -224,3 +225,20 @@ MonoBehaviour:
   slashPrefab: {fileID: 1676729862321437868, guid: 9697fd804cff7614683bc9a84a079383, type: 3}
   slashPoint: {fileID: 0}
   cooldown: 0.5
+--- !u!114 &3686918654100856248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462323315741496666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd450a8adde9e464cb8200cb144ea600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundCheck: {fileID: 0}
+  rayLength: 0.1
+  platformLayer:
+    serializedVersion: 2
+    m_Bits: 64
