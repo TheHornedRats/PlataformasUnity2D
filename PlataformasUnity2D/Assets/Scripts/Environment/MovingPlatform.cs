@@ -13,11 +13,12 @@ public class MovingPlatform : MonoBehaviour
         target = pointB;
     }
 
-    void FixedUpdate()
+    void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.fixedDeltaTime);
+        Vector3 targetPosition = new Vector3(target.position.x, target.position.y, transform.position.z);
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 
-        if (Vector2.Distance(transform.position, target.position) < 0.05f)
+        if (Vector3.Distance(transform.position, targetPosition) < 0.01f)
         {
             target = (target == pointA) ? pointB : pointA;
         }
