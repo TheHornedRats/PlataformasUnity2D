@@ -126,11 +126,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   jumpForce: 4
+  maxJumps: 2
+  groundCheck: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 72
-  groundCheck: {fileID: 0}
   groundCheckRadius: 0.1
+  attackRoot: {fileID: 0}
 --- !u!212 &-139579774879441696
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -197,7 +199,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   javelinPrefab: {fileID: 1925045828128095137, guid: 958f69308eb649e489e001acc5575001, type: 3}
   throwPoint: {fileID: 0}
-  throwCooldown: 3
+  javelinSpeed: 10
+  cooldown: 1
 --- !u!114 &-3139080969402934733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,8 +227,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f30a2a0025c58554bb59b3899757cb1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slashPrefab: {fileID: 1676729862321437868, guid: 9697fd804cff7614683bc9a84a079383, type: 3}
-  slashPoint: {fileID: 0}
+  slashPrefab: {fileID: 8293562781690450099, guid: 9697fd804cff7614683bc9a84a079383, type: 3}
+  attackPoint: {fileID: 0}
   cooldown: 0.5
 --- !u!114 &3686918654100856248
 MonoBehaviour:
