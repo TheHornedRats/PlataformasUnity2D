@@ -708,7 +708,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202298335}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0019, y: -0.0695, z: -0.14273447}
+  m_LocalPosition: {x: -0.0019, y: -0.235, z: -0.14273447}
   m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -823,7 +823,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 307064510}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.05, y: -0.006, z: -0.17598435}
+  m_LocalPosition: {x: 0.09, y: -0.006, z: -0.17598435}
   m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1141,8 +1141,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 36.170017, y: -53.205}
-  m_SizeDelta: {x: 359.14, y: 106.41}
+  m_AnchoredPosition: {x: 36.170017, y: -80.545}
+  m_SizeDelta: {x: 359.14, y: 161.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &437495861
 GameObject:
@@ -1393,6 +1393,11 @@ PrefabInstance:
     - target: {fileID: 3251456181851548686, guid: 68f2a5e228452e249b32d6e9e7f6d9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6926892247336955342, guid: 68f2a5e228452e249b32d6e9e7f6d9ae, type: 3}
+      propertyPath: message
+      value: Pulsa P para arrojar lanzas, utilizalas com plataforma. Puedes causar
+        explosiones con la L.
       objectReference: {fileID: 0}
     - target: {fileID: 6926892247336955342, guid: 68f2a5e228452e249b32d6e9e7f6d9ae, type: 3}
       propertyPath: promptUI
@@ -1716,6 +1721,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4167756452461931451, guid: 709968b6b40cd084f839ada2d94bd96f, type: 3}
+      propertyPath: m_Size.x
+      value: 0.32728767
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167756452461931451, guid: 709968b6b40cd084f839ada2d94bd96f, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5644876
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167756452461931451, guid: 709968b6b40cd084f839ada2d94bd96f, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0066814423
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167756452461931451, guid: 709968b6b40cd084f839ada2d94bd96f, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.008941114
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671428521690593817, guid: 709968b6b40cd084f839ada2d94bd96f, type: 3}
+      propertyPath: maxJumps
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4671428521690593817, guid: 709968b6b40cd084f839ada2d94bd96f, type: 3}
+      propertyPath: attackRoot
+      value: 
+      objectReference: {fileID: 307064511}
     - target: {fileID: 4671428521690593817, guid: 709968b6b40cd084f839ada2d94bd96f, type: 3}
       propertyPath: groundCheck
       value: 
@@ -1730,6 +1759,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7987997101773201393, guid: 709968b6b40cd084f839ada2d94bd96f, type: 3}
       propertyPath: slashPoint
+      value: 
+      objectReference: {fileID: 307064511}
+    - target: {fileID: 7987997101773201393, guid: 709968b6b40cd084f839ada2d94bd96f, type: 3}
+      propertyPath: attackPoint
       value: 
       objectReference: {fileID: 307064511}
     m_RemovedComponents: []
@@ -3287,7 +3320,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -260.4867, w: -154.30054}
+  m_margin: {x: 0, y: -26.966248, z: -260.4867, w: -183.06448}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4414,7 +4447,7 @@ Animator:
   m_GameObject: {fileID: 1609066441}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7550807c422a39a49a7cc4a8ffb42054, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4434,9 +4467,11 @@ Animation:
   m_GameObject: {fileID: 1609066441}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: a95a4642e146cfc4d8c996d9786dadc5, type: 2}
+  m_Animation: {fileID: 7400000, guid: 6918d0d98143ea344a9876a7d9253bb6, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: a95a4642e146cfc4d8c996d9786dadc5, type: 2}
+  - {fileID: 7400000, guid: 6918d0d98143ea344a9876a7d9253bb6, type: 2}
+  - {fileID: 7400000, guid: 63d651e4c5302a043baa41e6759e0fd0, type: 2}
+  - {fileID: 7400000, guid: 3eb4820bc7b58ad44860f214f9be37a7, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -5000,6 +5035,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2001158889}
+  - component: {fileID: 2001158890}
   m_Layer: 5
   m_Name: UI-Conversation
   m_TagString: Untagged
@@ -5029,6 +5065,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &2001158890
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001158888}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e4c4b16532b318447bd7e0dff6bfb975, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2077362101
 GameObject:
   m_ObjectHideFlags: 0

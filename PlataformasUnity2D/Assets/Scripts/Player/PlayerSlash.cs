@@ -1,19 +1,29 @@
 using UnityEngine;
 
-public class PlayerSwordAttack : MonoBehaviour
+public class PlayerSlash : MonoBehaviour
 {
     public GameObject slashPrefab;
-    public Transform slashPoint;
+    public Transform attackPoint;
     public float cooldown = 0.5f;
 
-    private float lastAttackTime;
+    private float lastSlashTime;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && Time.time - lastAttackTime >= cooldown)
+        if (Input.GetKeyDown(KeyCode.L) && Time.time - lastSlashTime >= cooldown)
         {
-            Instantiate(slashPrefab, slashPoint.position, slashPoint.rotation);
-            lastAttackTime = Time.time;
+            Slash();
+            lastSlashTime = Time.time;
         }
+    }
+
+    void Slash()
+    {
+        GameObject slash = Instantiate(slashPrefab, attackPoint.position, Quaternion.identity);
+
+        float direction = transform.localScale.x > 0 ? 1f : -1f;
+        Vector3 scale = slash.transform.localScale;
+        scale.x = Mathf.Abs(scale.x) * direction;
+        slash.transform.localScale = scale;
     }
 }
