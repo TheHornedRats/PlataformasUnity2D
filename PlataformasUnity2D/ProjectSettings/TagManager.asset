@@ -9,6 +9,8 @@ TagManager:
   - Enemy
   - Javelin
   - MovingPlatform
+  - Key
+  - LockedObject
   layers:
   - Default
   - TransparentFX

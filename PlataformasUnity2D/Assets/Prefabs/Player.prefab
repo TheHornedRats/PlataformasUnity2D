@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -3139080969402934733}
   - component: {fileID: 7987997101773201393}
   - component: {fileID: 3686918654100856248}
+  - component: {fileID: 2197485464290752055}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -210,6 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLives: 10
+  spawnPoint: {fileID: 0}
 --- !u!114 &7987997101773201393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,3 +244,16 @@ MonoBehaviour:
   platformLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &2197485464290752055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462323315741496666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: befaeb1ae41d97945a3c3e65738aecd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasKey: 0
